@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="EivindTemplate.EivindApps.53d7a5ef-3820-440a-89a0-cc281ed527d0" Version="1.0" Language="en-US" Publisher="Eivind Gussiås Løkseth" />
+    <DisplayName>EivindTemplate</DisplayName>
+    <Description>Just a simple test of a web application project template with a custom wizard.</Description>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="SomeWizard" Path="|SomeWizard|" AssemblyName="|SomeWizard;AssemblyName|" />
+  </Assets>
+</PackageManifest>

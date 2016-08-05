@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Eivnid Template</Name>
+    <Description>Just a test of a web project template with custom wizard.</Description>
+    <Icon>__TemplateIcon.png</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <TemplateGroupID></TemplateGroupID>
+    <TemplateID>EivindApps.Cshtml.EivindTemplate.v1</TemplateID>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <CreateInPlace>true</CreateInPlace>
+    <DefaultName>EivindWebApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+  </TemplateData>
+  <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$language$" Value="C#" />
+      <CustomParameter Name="$languageext$" Value="cs" />
+      <CustomParameter Name="$globalclassname$" Value="MvcApplication" />
+    </CustomParameters>
+    <Project TargetFileName="$safeprojectname$.csproj" File="WebApplication1.csproj" ReplaceParameters="true" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false">index.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="false">packages.config</ProjectItem>
+    </Project>
+    <References>
+      <Reference Id="NuPackToolsVsix.Microsoft.67e54e40-0ae3-42c5-a949-fddf5739e7a5" MinVersion="1.7.30402.9028">
+        <Name>NuGet Package Manager</Name>
+        <MoreInfoUrl>http://docs.nuget.org/</MoreInfoUrl>
+      </Reference>
+    </References>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>SomeWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=‎2aae4b4649e88a7a</Assembly>
+    <FullClassName>SomeWizard.CustomWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+  </WizardData>
+</VSTemplate>

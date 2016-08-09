@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("EivindTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Karoline Klever")]
 [assembly: AssemblyProduct("EivindTemplate")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Copyright © Karoline Klever 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -18,6 +18,9 @@ using System.Runtime.InteropServices;
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("95cfbc96-0cfa-4854-9715-63257cd0f4ea")]
 
 // Version information for an assembly consists of the following four values:
 //

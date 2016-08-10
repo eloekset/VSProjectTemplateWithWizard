@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Eivinds working template</Name>
+    <Description>EivindTemplate</Description>
+    <Icon>EivindTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>003eb337-958e-4f9b-8926-4d7ea70738c0</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>EivindTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>SomeWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f59e1abdfbefcf23</Assembly>
+    <FullClassName>SomeWizard.CustomWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

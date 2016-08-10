@@ -1,6 +1,6 @@
-﻿using EnvDTE;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TemplateWizard;
-using System.Collections.Generic;
+using EnvDTE;
 
 namespace SomeWizard
 {
